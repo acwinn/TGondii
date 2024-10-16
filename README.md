@@ -40,8 +40,8 @@ Open the TGondiiModel.ipynb file, and you are ready to go.
 Run the first two cells of code by pressing Shift + Enter in each cell. 
 The first cell imports the necessary packages. If no errors arise when running this cell, the packages were installed correctly.
 The second cell defines the functions that will be used for calculating and plotting the results. 
-Next, run the third cell. This will demonstrate a typical application of the model. 
-A png of the number of tachyzoite-infected cells, bradyzoite-infected cells, and immune cells normalized by the number of initial healthy cells verses days post infection is displayed and saved to your current directory. The expected runtime is one second.  In this particular test, you should see that the immune pressure on both tachyzoites and bradyzoites leads to dampened oscillations in the infected cell number. 
+Next, run the third cell. This will demonstrate the model for the special case cTB=0. A plot of the number of tachyzoite-infected cells, bradyzoite-infected cells (in this case zero), and immune cells normalized by the number of initial healthy cells versus days post infection is displayed. The small tolerance used in our numerical integration is necessary to get the correct behavior for this special case. Confirm that the peaks in the red curve remain at the same value to ensure the integration is being performed correctly. 
+Finally, run the fourth cell. This will demonstrate a typical application of the model when all terms are nonzero. A png of the number of tachyzoite-infected cells, bradyzoite-infected cells, and immune cells normalized by the number of initial healthy cells versus days post infection is displayed and saved to your current directory. The expected runtime is one second.  In this particular test, you should see that the immune pressure on both tachyzoites and bradyzoites leads to dampened oscillations in the infected cell number. 
 
 
 4. Instructions for use
